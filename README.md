@@ -62,7 +62,7 @@ Also have done DSA and have solved 300+ LeetCode problems and have a good unders
 ##
 
 ## CERTIFICATION:
-- 'Development:'  BROCODE, Code Studio
+- <mark>Development:</mark>  BROCODE, Code Studio
 - 'Core Language and Skills:' C++ , Python and DSA : Books,TakeUfroward, Love Babber, BROCODE
 - CyberSecurities: Online Classes
 ##
