@@ -19,5 +19,5 @@ Here are some ideas to get you started:
 - ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
 - ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-black?style=for-the-badge&logo=github-actions&logoColor=white)
-![File I/O](https://img.shields.io/badge/File_I/O-green?style=for-the-badge&logo=data-transfer&logoColor=white)
-![Binary Analysis](https://img.shields.io/badge/Binary_Analysis-blueviolet?style=for-the-badge)
+  ![Python](https://img.shields.io/badge/Python/O-green?style=for-the-badge&logo=data-transfer&logoColor=white)
+  ![HTML](https://img.shields.io/badge/HTML-blueviolet?style=for-the-badge)
