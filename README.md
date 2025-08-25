@@ -22,7 +22,7 @@
 
 ## About Me:
 I have good knownledge in C++ while also a Mern Stack Developer and a Cyber Security Specialist ... I Seek to learn more about systems and Networking and enchance My skills in  C++ and Development while contineously developing some small/big projects and deploy it here once I feel like its perfect.
-Also have done DSA and have solved 300+ LeetCode problems and have a good understanding about Arrays,Graph,Trees...
+
 ##
 
 ## Check Out My Portfolio Site:
@@ -64,9 +64,9 @@ Also have done DSA and have solved 300+ LeetCode problems and have a good unders
 ##
 
 ## CERTIFICATION
-- <mark>Development</mark>  BROCODE, Code Studio
-- <mark>Core Language and Skills </mark> C++ , Python and DSA : Books,TakeUfroward, Love Babber, BROCODE
-- <mark>CyberSecurities</mark>  Online Classes
+- <mark>Development</mark> :->  BROCODE, Code Studio
+- <mark>Core Language and Skills</mark> :-> C++ , Python and DSA : Books,TakeUfroward, Love Babber, BROCODE
+- <mark>CyberSecurities</mark> :-> Online Classes
 ##
 
 ## 📫 Reach Me:
