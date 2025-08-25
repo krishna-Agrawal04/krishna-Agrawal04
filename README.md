@@ -1,11 +1,13 @@
 # GIFStegalyzer
+
 A lightweight and efficient C++ tool for detecting potential malware and hidden data within GIF images. This project demonstrates low-level file format analysis, a crucial skill in cybersecurity and reverse engineering.
 ##
 
 💡 Project Motivation
+
 Steganography is a technique used to conceal a file, message, or image within another file. Malicious actors can hide malware executables or scripts inside seemingly harmless image files like GIFs. GIFStegalyzer addresses this threat by performing a series of checks on a GIF's binary structure to identify anomalies that suggest a hidden payload.
 
-This tool is an excellent portfolio piece, showcasing skills in:
+ This tool is an excellent portfolio piece, showcasing skills in:
 - C++ programming fundamentals
 - Binary file I/O and manipulation
 - Understanding of file formats (GIF89a)
@@ -14,11 +16,13 @@ This tool is an excellent portfolio piece, showcasing skills in:
 ##
 
 🔬 How It Works
+
 GIFStegalyzer performs a primary check for appended data, a common and simple steganographic technique. A valid GIF file has a specific structure that must end with a single trailer byte (0x3B). Any data found after this byte is considered suspicious and is flagged for further inspection.
 The tool's analysis is non-destructive and safe. It does not execute or remove the file; it only reads its binary content and reports its findings.
 ##
 
 🚀 Getting Started
+
 Prerequisites
 You will need a C++11 compliant compiler (e.g., g++, Clang) and CMake to build the project.
 
