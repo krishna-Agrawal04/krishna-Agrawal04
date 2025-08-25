@@ -13,9 +13,10 @@
 
 
 ⚙️ Technologies & Skills
-- ![Data Structures & Algorithms](https://img.shields.io/badge/DSA-informational?style=for-the-badge&labelColor=333333&color=a434b9)
-- ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-- ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-black?style=for-the-badge&logo=github-actions&logoColor=white)
+
+ ![Data Structures & Algorithms](https://img.shields.io/badge/DSA-informational?style=for-the-badge&labelColor=333333&color=a434b9)
+ ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+ ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-black?style=for-the-badge&logo=github-actions&logoColor=white)
 
 
 ## About Me:
@@ -28,16 +29,21 @@ Also have done DSA and have solved 300+ LeetCode problems and have a good unders
 ##
 ## 🚀 Projects:
 - 💡 Library Managment
-    -> Focused on building a cluster of information about a airlines booking site that can be accesed via terminal
 
+     -> Focused on building a cluster of information about a airlines booking site that can be accesed via terminal
+  
 - 🎈 Portfolio Website:
+
     -> Build a Website to showcase about my skills using NODEJS, ReactJS, Javascript 
 
 - 🏪 GIFStegalyzer:
+
     -> A Project aims to detect if a gif contains a malware and warns about the potential risk, Developed with the help of C++ libraries
 
 - 🎡 GIFStegalzerExtension:
-    -> This is the extension that will help user detect the virus while on a browser and downloading any gif , image from the internet... Mainly focused on Javascript for Browser frontend and C++ and python for the backend workflow  
+
+   -> This is the extension that will help user detect the virus while on a browser and downloading any gif , image from the internet.
+      Mainly focused on Javascript for Browser frontend and C++ and Python programming for the backend workflow  
 
 ## Tools:
 - CURSOR
