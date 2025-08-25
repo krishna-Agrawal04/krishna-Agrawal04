@@ -1,76 +1,76 @@
-## Hello I'm Krishna Agrawal 👋
+# GIFStegalyzer
+A lightweight and efficient C++ tool for detecting potential malware and hidden data within GIF images. This project demonstrates low-level file format analysis, a crucial skill in cybersecurity and reverse engineering.
+💡 Project Motivation
+Steganography is a technique used to conceal a file, message, or image within another file. Malicious actors can hide malware executables or scripts inside seemingly harmless image files like GIFs. GIFStegalyzer addresses this threat by performing a series of checks on a GIF's binary structure to identify anomalies that suggest a hidden payload.
+This tool is an excellent portfolio piece, showcasing skills in:
+C++ programming fundamentals
+Binary file I/O and manipulation
+Understanding of file formats (GIF89a)
+Cybersecurity and threat detection principles
+Command-line application development
+🔬 How It Works
+GIFStegalyzer performs a primary check for appended data, a common and simple steganographic technique. A valid GIF file has a specific structure that must end with a single trailer byte (0x3B). Any data found after this byte is considered suspicious and is flagged for further inspection.
+The tool's analysis is non-destructive and safe. It does not execute or remove the file; it only reads its binary content and reports its findings.
+🚀 Getting Started
+Prerequisites
+You will need a C++11 compliant compiler (e.g., g++, Clang) and CMake to build the project.
+           g++: sudo apt-get install g++
+CMake: sudo apt-get install cmake
+Build and Run
+Clone the repository and build the project from your terminal.
+# Clone the repository
+    git clone https://github.com/YourUsername/GIFStegalyzer.git
+    cd GIFStegalyzer
+
+# Compile the code
+    g++ main.cpp gif_analyzer.cpp -o gifstegalyzer -std=c++11
 
 
-💻 Programming Languages & Frameworks 
-
- ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
- ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
- ![ReactJS](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
- ![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
- ![ExpressJS](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
- ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+Usage
+Run the compiled executable from your terminal, providing the path to the GIF file you wish to analyze.
+# Analyze a sample GIF
+    ./gifstegalyzer sample.gif
 
 
-⚙️ Technologies & Skills
+Example Output
+A safe file will produce the following output:
+Starting analysis of: safe.gif
+File size: 1024 bytes
+No suspicious data detected after the GIF trailer.
 
- ![Data Structures & Algorithms](https://img.shields.io/badge/DSA-informational?style=for-the-badge&labelColor=333333&color=a434b9)
- ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
- ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-black?style=for-the-badge&logo=github-actions&logoColor=white)
+--- Analysis Report ---
+File: safe.gif
+Verdict: ✅ **SAFE** ✅ - File appears to be a standard GIF.
+-----------------------
 
 
-## About Me:
-I have good knownledge in C++ while also a Mern Stack Developer and a Cyber Security Specialist ... I Seek to learn more about systems and Networking and enchance My skills in  C++ and Development while contineously developing some small/big projects and deploy it here once I feel like its perfect.
+A suspicious file (with appended data) will produce this output:
+Starting analysis of: suspicious.gif
+File size: 1100 bytes
+Warning: The last byte is not the official GIF trailer (0x3B).
+Detected 76 suspicious bytes after the GIF trailer.
 
-##
+--- Analysis Report ---
+File: suspicious.gif
+Verdict: 🚨 **SUSPICIOUS** 🚨 - Potential malware or data hidden.
+-----------------------
 
-## Check Out My Portfolio Site:
-##
 
-## 🚀 Projects:
-- 💡 Library Managment
-  
-   Focused on building a cluster of information about a airlines booking site that can be accesed via terminal
-  
-- 🎈 Portfolio Website:
-
-  Build a Website to showcase about my skills using NODEJS, ReactJS, Javascript 
-
-- 🏪 GIFStegalyzer:
-
-    A Project aims to detect if a gif contains a malware and warns about the potential risk, Developed with the help of C++ libraries
-
-- 🎡 GIFStegalzerExtension:
-
-  This is the extension that will help user detect the virus while on a browser and downloading any gif , image from the internet.
-
-   Mainly focused on Javascript for Browser frontend and C++ and Python programming for the backend workflow  
-##
-
-## Tools:
-- CURSOR
-- OLLAMA
-- CODENINJAS
-- VS CODE
-- LEETCODE
-##
-
-## Common Projects
-- 👩‍🏫 Calculator -> Made with C++,HTML,CSS and javascript
-- 📆 Calender -> Made with HTML and CSS
-- 🎮 Tic-Tac-Toe -> Made with C++
-- 😶‍🌫️ Github ProfileFinder -> Made with HTML,CSS, Javascript
-##
-
-## CERTIFICATION
-- <mark>Development</mark> :->  BROCODE, Code Studio
-- <mark>Core Language and Skills</mark> :-> C++ , Python and DSA : Books,TakeUfroward, Love Babber, BROCODE
-- <mark>CyberSecurities</mark> :-> Online Classes
-##
-
-## 📫 Reach Me:
-📧 krishnaagr218@gmail.com  
-📍 Ujjain, Madhya Pradesh  
-🖇️ [LinkedIn](https://www.linkedin.com/in/krishna-agrawal10/)
-##
+📚 Technical Details
+The project is structured into three main files:
+main.cpp: The entry point of the program.
+gif_analyzer.h: Defines the GifAnalyzer class and GIF file structure.
+gif_analyzer.cpp: Contains the core logic for parsing the GIF binary data and detecting anomalies.
+The GifAnalyzer class reads the file in binary mode and performs the following checks:
+File Signature: Verifies the file starts with GIF87a or GIF89a.
+Trailer Check: Seeks to the end of the file to ensure the last byte is the GIF trailer (0x3B).
+Appended Data: Compares the file size with the position of the trailer to determine if any extra bytes have been appended.
+🤝 Contributions
+Feel free to fork the repository and contribute! Ideas for future improvements include:
+A more comprehensive file parser to analyze other GIF blocks.
+Statistical analysis of pixel data to detect Least Significant Bit (LSB) steganography.
+Integration with a signature database (like YARA rules) to scan for known malware patterns.
+📄 License
+This project is licensed under the MIT License.
+# Gif-Malware-Scanner
+# GifStegalyzerr
