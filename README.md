@@ -26,51 +26,49 @@ The tool's analysis is non-destructive and safe. It does not execute or remove t
 Prerequisites
 You will need a C++11 compliant compiler (e.g., g++, Clang) and CMake to build the project.
 
-- g++: <male>sudo apt-get install g++</make>
-- CMake: <mark>sudo apt-get install cmake</make>
+- g++: <mark>sudo apt-get install g++</mark>
+- CMake: <mark>sudo apt-get install cmake</mark>
 
 Build and Run
 Clone the repository and build the project from your terminal.
+# Clone the repository           
+    git clone https://github.com/YourUsername/GIFStegalyzer.git
+    cd GIFStegalyzer
 
-           # Clone the repository
-               git clone https://github.com/YourUsername/GIFStegalyzer.git
-               cd GIFStegalyzer
-
-           # Compile the code
-               g++ main.cpp gif_analyzer.cpp -o gifstegalyzer -std=c++11
+# Compile the code
+    g++ main.cpp gif_analyzer.cpp -o gifstegalyzer -std=c++11
 
 ##
 
 # Usage
 Run the compiled executable from your terminal, providing the path to the GIF file you wish to analyze.
-
-           # Analyze a sample GIF
-               ./gifstegalyzer sample.gif
+# Analyze a sample GIF
+    ./gifstegalyzer sample.gif
 
 ##
 
 # Example Output
 A safe file will produce the following output:
 
-           Starting analysis of: safe.gif
-           File size: 1024 bytes
-           No suspicious data detected after the GIF trailer.
+    Starting analysis of: safe.gif
+    File size: 1024 bytes
+    No suspicious data detected after the GIF trailer.
            
-        --- Analysis Report ---
-           File: safe.gif
-           Verdict: ✅ **SAFE** ✅ - File appears to be a standard GIF.
-           -----------------------
+    --- Analysis Report ---
+    File: safe.gif
+    Verdict: ✅ **SAFE** ✅ - File appears to be a standard GIF.
+    ----------------------
 A suspicious file (with appended data) will produce this output:
           
-           Starting analysis of: suspicious.gif
-           File size: 1100 bytes
-           Warning: The last byte is not the official GIF trailer (0x3B).
-           Detected 76 suspicious bytes after the GIF trailer.
+     Starting analysis of: suspicious.gif
+     File size: 1100 bytes
+     Warning: The last byte is not the official GIF trailer (0x3B).
+     Detected 76 suspicious bytes after the GIF trailer.
            
-           --- Analysis Report ---
-           File: suspicious.gif
-           Verdict: 🚨 **SUSPICIOUS** 🚨 - Potential malware or data hidden.
-           -----------------------
+     --- Analysis Report ---
+     File: suspicious.gif
+     Verdict: 🚨 **SUSPICIOUS** 🚨 - Potential malware or data hidden.
+     -----------------------
 
 ##
 
