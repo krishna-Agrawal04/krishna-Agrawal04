@@ -7,7 +7,9 @@ This project demonstrates low-level file format analysis, a crucial skill in cyb
 
 ## 💡 Project Motivation
  
-Steganography is a technique used to conceal a file, message, or image within another file. Malicious actors can hide malware executables or scripts inside seemingly harmless image files like GIFs. GIFStegalyzer addresses this threat by performing a series of checks on a GIF's binary structure to identify anomalies that suggest a hidden payload.
+Steganography is a technique used to conceal a file, message, or image within another file. Malicious actors can hide malware executables or scripts inside seemingly harmless image files like GIFs.
+
+GIFStegalyzer addresses this threat by performing a series of checks on a GIF's binary structure to identify anomalies that suggest a hidden payload.
 
  This tool is an excellent portfolio piece, showcasing skills in:
 - C++ programming fundamentals
@@ -19,22 +21,27 @@ Steganography is a technique used to conceal a file, message, or image within an
 
 ## 🔬 How It Works
 
-GIFStegalyzer performs a primary check for appended data, a common and simple steganographic technique. A valid GIF file has a specific structure that must end with a single trailer byte (0x3B). Any data found after this byte is considered suspicious and is flagged for further inspection.
+GIFStegalyzer performs a primary check for appended data, a common and simple steganographic technique.
+
+A valid GIF file has a specific structure that must end with a single trailer byte (0x3B). Any data found after this byte is considered suspicious and is flagged for further inspection.
+
 The tool's analysis is non-destructive and safe. It does not execute or remove the file; it only reads its binary content and reports its findings.
 ##
 
 ## 🚀 Getting Started
 
 Prerequisites
+
 You will need a C++11 compliant compiler (e.g., g++, Clang) and CMake to build the project.
 
 - g++: <mark>sudo apt-get install g++</mark>
 - CMake: <mark>sudo apt-get install cmake</mark>
 
 Build and Run
+
 Clone the repository and build the project from your terminal.
 ## Clone the repository           
-    git clone https://github.com/YourUsername/GIFStegalyzer.git
+    git clone https://github.com/krishna-Agrawal23/GIFStegalyzer.git
     cd GIFStegalyzer
 
 ## Compile the code
