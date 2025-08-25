@@ -72,7 +72,6 @@ The project is structured into three main files:
 - <mark>main.cpp:</mark> The entry point of the program.
 - <mark>gif_analyzer.h:</mark> Defines the GifAnalyzer class and GIF file structure.
 - <mark>gif_analyzer.cpp:</mark> Contains the core logic for parsing the GIF binary data and detecting anomalies.
-
 The <mark>GifAnalyzer</mark> class reads the file in binary mode and performs the following checks:
 - File Signature: Verifies the file starts with <amrk>GIF87a</mark> or <mark>GIF89a.</mark>
 - Trailer Check: Seeks to the end of the file to ensure the last byte is the GIF trailer (<mark>0x3B</mark>).
