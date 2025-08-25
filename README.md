@@ -4,7 +4,7 @@ A lightweight and efficient C++ tool for detecting potential malware and hidden 
 ##
 
 # 💡 Project Motivation
-
+ 
 Steganography is a technique used to conceal a file, message, or image within another file. Malicious actors can hide malware executables or scripts inside seemingly harmless image files like GIFs. GIFStegalyzer addresses this threat by performing a series of checks on a GIF's binary structure to identify anomalies that suggest a hidden payload.
 
  This tool is an excellent portfolio piece, showcasing skills in:
