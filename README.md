@@ -2,16 +2,19 @@
 A lightweight and efficient C++ tool for detecting potential malware and hidden data within GIF images. 
 
 This project demonstrates low-level file format analysis, a crucial skill in cybersecurity and reverse engineering.
+
 ## 💡 Project Motivation 
 Steganography is a technique used to conceal a file, message, or image within another file. Malicious actors can hide malware executables or scripts inside seemingly harmless image files like GIFs.
 
 GIFStegalyzer addresses this threat by performing a series of checks on a GIF's binary structure to identify anomalies that suggest a hidden payload.
+
 ### This tool is an excellent portfolio piece, showcasing skills in:
 - C++ programming fundamentals
 - Binary file I/O and manipulation
 - Understanding of file formats (GIF89a)
 - Cybersecurity and threat detection principles
 - Command-line application development
+
 ## 🔬 How It Works
 GIFStegalyzer performs a primary check for appended data, a common and simple steganographic technique.
 
@@ -26,10 +29,10 @@ You will need a C++11 compliant compiler (e.g., g++, Clang) and CMake to build t
 - CMake: <mark>sudo apt-get install cmake</mark>
 ### Build and Run
 Clone the repository and build the project from your terminal.
-## Clone the repository           
+### Clone the repository           
     git clone https://github.com/krishna-Agrawal23/GIFStegalyzer.git
     cd GIFStegalyzer
-## Compile the code
+### Compile the code
     g++ main.cpp gif_analyzer.cpp -o gifstegalyzer -std=c++11
 ## Usage
 Run the compiled executable from your terminal, providing the path to the GIF file you wish to analyze.
@@ -63,6 +66,7 @@ The project is structured into three main files:
 - <mark>main.cpp:</mark> The entry point of the program.
 - <mark>gif_analyzer.h:</mark> Defines the GifAnalyzer class and GIF file structure.
 - <mark>gif_analyzer.cpp:</mark> Contains the core logic for parsing the GIF binary data and detecting anomalies.
+
 The <mark>GifAnalyzer</mark> class reads the file in binary mode and performs the following checks:
 - File Signature: Verifies the file starts with <amrk>GIF87a</mark> or <mark>GIF89a.</mark>
 - Trailer Check: Seeks to the end of the file to ensure the last byte is the GIF trailer (<mark>0x3B</mark>).
