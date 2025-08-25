@@ -102,4 +102,4 @@ Feel free to fork the repository and contribute! Ideas for future improvements i
 
 This project is licensed under the MIT License.
 
-# GifStegalyzerr
+#
