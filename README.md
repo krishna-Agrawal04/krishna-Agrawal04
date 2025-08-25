@@ -1,5 +1,5 @@
 # GIFStegalyzer
-
+ 
 A lightweight and efficient C++ tool for detecting potential malware and hidden data within GIF images. This project demonstrates low-level file format analysis, a crucial skill in cybersecurity and reverse engineering.
 ##
 
