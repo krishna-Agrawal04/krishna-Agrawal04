@@ -1,12 +1,9 @@
-## GIFStegalyzer
- 
+## GIFStegalyzer 
 A lightweight and efficient C++ tool for detecting potential malware and hidden data within GIF images. 
 
 This project demonstrates low-level file format analysis, a crucial skill in cybersecurity and reverse engineering.
-##
 
-## 💡 Project Motivation
- 
+## 💡 Project Motivation 
 Steganography is a technique used to conceal a file, message, or image within another file. Malicious actors can hide malware executables or scripts inside seemingly harmless image files like GIFs.
 
 GIFStegalyzer addresses this threat by performing a series of checks on a GIF's binary structure to identify anomalies that suggest a hidden payload.
@@ -17,43 +14,34 @@ GIFStegalyzer addresses this threat by performing a series of checks on a GIF's 
 - Understanding of file formats (GIF89a)
 - Cybersecurity and threat detection principles
 - Command-line application development
-##
+
 
 ## 🔬 How It Works
-
 GIFStegalyzer performs a primary check for appended data, a common and simple steganographic technique.
 
 A valid GIF file has a specific structure that must end with a single trailer byte (0x3B). Any data found after this byte is considered suspicious and is flagged for further inspection.
 
 The tool's analysis is non-destructive and safe. It does not execute or remove the file; it only reads its binary content and reports its findings.
-##
 
 ## 🚀 Getting Started
-
 ### Prerequisites
-
 You will need a C++11 compliant compiler (e.g., g++, Clang) and CMake to build the project.
 
 - g++: <mark>sudo apt-get install g++</mark>
 - CMake: <mark>sudo apt-get install cmake</mark>
-
 ### Build and Run
 Clone the repository and build the project from your terminal.
 ## Clone the repository           
     git clone https://github.com/krishna-Agrawal23/GIFStegalyzer.git
     cd GIFStegalyzer
-
 ## Compile the code
     g++ main.cpp gif_analyzer.cpp -o gifstegalyzer -std=c++11
-
-##
 
 ## Usage
 Run the compiled executable from your terminal, providing the path to the GIF file you wish to analyze.
 ### Analyze a sample GIF
     ./gifstegalyzer sample.gif
 
-##
 
 ## Example Output
 A safe file will produce the following output:
@@ -78,7 +66,6 @@ A suspicious file (with appended data) will produce this output:
      Verdict: 🚨 **SUSPICIOUS** 🚨 - Potential malware or data hidden.
      -----------------------
 
-##
 
 ## 📚 Technical Details
 The project is structured into three main files:
@@ -90,7 +77,7 @@ The <mark>GifAnalyzer</mark> class reads the file in binary mode and performs th
 - File Signature: Verifies the file starts with <amrk>GIF87a</mark> or <mark>GIF89a.</mark>
 - Trailer Check: Seeks to the end of the file to ensure the last byte is the GIF trailer (<mark>0x3B</mark>).
 - Appended Data: Compares the file size with the position of the trailer to determine if any extra bytes have been appended.
-##
+
 
 ## 🤝 Contributions
 Feel free to fork the repository and contribute! Ideas for future improvements include:
@@ -99,7 +86,6 @@ Feel free to fork the repository and contribute! Ideas for future improvements i
 - Integration with a signature database (like YARA rules) to scan for known malware patterns.
 
 ## 📄 License
-
 This project is licensed under the MIT License.
 
 #
