@@ -11,7 +11,7 @@ Steganography is a technique used to conceal a file, message, or image within an
 
 GIFStegalyzer addresses this threat by performing a series of checks on a GIF's binary structure to identify anomalies that suggest a hidden payload.
 
- This tool is an excellent portfolio piece, showcasing skills in:
+### This tool is an excellent portfolio piece, showcasing skills in:
 - C++ programming fundamentals
 - Binary file I/O and manipulation
 - Understanding of file formats (GIF89a)
@@ -30,15 +30,14 @@ The tool's analysis is non-destructive and safe. It does not execute or remove t
 
 ## 🚀 Getting Started
 
-Prerequisites
+### Prerequisites
 
 You will need a C++11 compliant compiler (e.g., g++, Clang) and CMake to build the project.
 
 - g++: <mark>sudo apt-get install g++</mark>
 - CMake: <mark>sudo apt-get install cmake</mark>
 
-Build and Run
-
+### Build and Run
 Clone the repository and build the project from your terminal.
 ## Clone the repository           
     git clone https://github.com/krishna-Agrawal23/GIFStegalyzer.git
@@ -51,7 +50,7 @@ Clone the repository and build the project from your terminal.
 
 ## Usage
 Run the compiled executable from your terminal, providing the path to the GIF file you wish to analyze.
-## Analyze a sample GIF
+### Analyze a sample GIF
     ./gifstegalyzer sample.gif
 
 ##
