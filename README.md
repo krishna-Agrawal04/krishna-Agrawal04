@@ -29,20 +29,20 @@ Also have done DSA and have solved 300+ LeetCode problems and have a good unders
 ##
 ## 🚀 Projects:
 - 💡 Library Managment
-
-     -> Focused on building a cluster of information about a airlines booking site that can be accesed via terminal
+  
+   Focused on building a cluster of information about a airlines booking site that can be accesed via terminal
   
 - 🎈 Portfolio Website:
 
-    -> Build a Website to showcase about my skills using NODEJS, ReactJS, Javascript 
+     Build a Website to showcase about my skills using NODEJS, ReactJS, Javascript 
 
 - 🏪 GIFStegalyzer:
 
-    -> A Project aims to detect if a gif contains a malware and warns about the potential risk, Developed with the help of C++ libraries
+     A Project aims to detect if a gif contains a malware and warns about the potential risk, Developed with the help of C++ libraries
 
 - 🎡 GIFStegalzerExtension:
 
-   -> This is the extension that will help user detect the virus while on a browser and downloading any gif , image from the internet.
+    This is the extension that will help user detect the virus while on a browser and downloading any gif , image from the internet.
       Mainly focused on Javascript for Browser frontend and C++ and Python programming for the backend workflow  
 
 ## Tools:
@@ -54,14 +54,14 @@ Also have done DSA and have solved 300+ LeetCode problems and have a good unders
 ##
 
 ## Common Projects:
-- 👩‍🏫 Calculator - Using C++,HTML,CSS and javascript
-- 📆 Calender - using HTML and CSS
-- 🎮 Tic-Tac-Toe
-- 😶‍🌫️ Github ProfileFinder 
+- 👩‍🏫 Calculator -> Made with C++,HTML,CSS and javascript
+- 📆 Calender -> Made with HTML and CSS
+- 🎮 Tic-Tac-Toe -> Made with C++
+- 😶‍🌫️ Github ProfileFinder -> Made with HTML,CSS, Javascript
 ##
 
 ## CERTIFICATION:
-- DEVELOPMENT: From Youtube: BROCODE, Love Babber
+- Development: BROCODE, Code Studio
 - C++ , Python and DSA : Books,TakeUfroward, Love Babber, BROCODE
 - CyberSecurities: Online Classes
 ##
